@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập - HISAKA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffb3d9, #ffc9e0);
+            min-height: 100vh;
+        }
+        
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+        
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 200px);
+            padding: 20px;
+        }
+        
+        .login-section {
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #e74c3c;
+        }
+        
+        .login-form {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: #2c3e50;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: #e74c3c;
+        }
+        
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 15px;
+            transition: background-color 0.3s;
+        }
+        
+        .login-btn:hover {
+            background-color: #c0392b;
+        }
+        
+        .forgot-password {
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .forgot-password:hover {
+            color: #e74c3c;
+        }
+        
+        .divider {
+            margin: 20px 0;
+            color: #999;
+            font-size: 14px;
+        }
+        
+        .create-account-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #95a5a6;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .create-account-btn:hover {
+            background-color: #7f8c8d;
+        }
+        
+        .footer {
+            background-color: #e74c3c;
+            color: white;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .footer-section h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: white;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+        }
+        
+        .footer-section ul li a:hover {
+            opacity: 1;
+        }
+        
+        .newsletter {
+            display: flex;
+            margin-top: 10px;
+        }
+        
+        .newsletter input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            font-size: 14px;
+        }
+        
+        .newsletter button {
+            padding: 10px 20px;
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        
+        .payment-methods {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .payment-method {
+            width: 40px;
+            height: 25px;
+            background-color: white;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .login-form {
+                margin: 0 10px;
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Đăng nhập
+    </div>
+    
+    <div class="main-container">
+        <div class="login-section">
+            <div class="logo">
+                <div class="logo-icon">♣</div>
+                HISAKA
+            </div>
+            
+            <div class="login-form">
+                <h2 class="form-title">Đăng nhập vào HISAKA</h2>
+                
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Email hoặc số điện thoại" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="password" class="form-input" placeholder="Mật khẩu" required>
+                    </div>
+                    
+                    <button type="submit" class="login-btn">Đăng nhập</button>
+                    
+                    <a href="#" class="forgot-password">Quên mật khẩu?</a>
+                    
+                    <div class="divider">hoặc</div>
+                    
+                    <button type="button" class="create-account-btn">Tạo tài khoản mới</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                <ul>
+                    <li>Hotline: 1800 6324 (miễn phí, 08-22h kể cả T7, CN)</li>
+                    <li><a href="#">Gửi yêu cầu hỗ trợ</a></li>
+                    <li><a href="#">Hướng dẫn đặt hàng</a></li>
+                    <li><a href="#">Phương thức vận chuyển</a></li>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>VỀ HISAKA</h3>
+                <ul>
+                    <li><a href="#">Giới thiệu Hisaka.vn</a></li>
+                    <li><a href="#">Tuyển Dụng</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>HỢP TÁC & LIÊN KẾT</h3>
+                <ul>
+                    <li><a href="https://hisaka.vn/clinic">https://hisaka.vn/clinic</a></li>
+                    <li><a href="#">Hisaka cẩm nang</a></li>
+                </ul>
+                
+                <h3 style="margin-top: 20px;">THANH TOÁN</h3>
+                <div class="payment-methods">
+                    <div class="payment-method">VISA</div>
+                    <div class="payment-method">MC</div>
+                    <div class="payment-method">ATM</div>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>CẬP NHẬT THÔNG TIN KHUYẾN MÃI</h3>
+                <div class="newsletter">
+                    <input type="email" placeholder="email của bạn">
+                    <button>Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Xử lý form đăng nhập
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Chức năng đăng nhập sẽ được triển khai!');
+        });
+        
+        // Xử lý tạo tài khoản mới
+        document.querySelector('.create-account-btn').addEventListener('click', function() {
+            alert('Chuyển đến trang đăng ký!');
+        });
+        
+        // Xử lý đăng ký newsletter
+        document.querySelector('.newsletter button').addEventListener('click', function() {
+            const email = document.querySelector('.newsletter input').value;
+            if (email) {
+                alert('Đăng ký thành công với email: ' + email);
+                document.querySelector('.newsletter input').value = '';
+            } else {
+                alert('Vui lòng nhập email!');
+            }
+        });
+    </script>
+</body>
+</html>
