@@ -37,6 +37,8 @@ if (!app.Environment.IsDevelopment())
 //app.UseHttpsRedirection(); // Chuyển hướng HTTP sang HTTPS (nếu đã cấu hình)
 app.UseStaticFiles();     // Cho phép phục vụ các tệp tĩnh từ wwwroot
 
+app.UseStaticFiles(); // Cho phép phục vụ các tệp tĩnh từ wwwroot
+
 app.UseRouting();         // Định tuyến các yêu cầu
 
 // app.UseAuthentication(); // Hiện tại chưa cần, nhưng nếu dùng Identity thì sẽ kích hoạt

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HISAKA.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66e4cd219565a9143232026e947e26c77971d1a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("HISAKA.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HISAKA.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -22,9 +22,10 @@ body {
 
 /* Header Top */
 .hisaka-header-top {
-    background-color: var(--primary-hisaka);
+    background-color: #d97575;
     color: white;
 }
+
 
 .hisaka-header-top .logo-brand {
     color: white !important;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,13 +14,13 @@
     
     <link rel="stylesheet" href="~/css/hisaka-header-footer.css" asp-append-version="true" />
 </head>
+
 <body>
-    <header>
+<header>
     <div class="hisaka-header-top">
         <div class="container d-flex align-items-center justify-content-between py-2 flex-nowrap">
             <a asp-controller="Home" asp-action="Index" class="logo-brand d-flex align-items-center text-decoration-none me-3">
-                <img src="~/favicon.ico" alt="HISAKA Logo" class="me-2" style="height: 30px;">
-                <span class="fw-bold fs-4 text-white">HISAKA</span>
+                <img src="/images/logo.png" alt="HISAKA Logo" class="me-2" style="height: 80px;">
             </a>
 
             <div class="search-bar position-relative me-3">
@@ -52,53 +53,54 @@
         </main>
     </div>
 
-    <footer class="hisaka-footer bg-danger text-white py-4 mt-auto"></footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h5 class="fw-bold mb-3">HỖ TRỢ KHÁCH HÀNG</h5>
-                    <ul class="list-unstyled">
-                        <li>Hotline: 1900 6035 (miễn phí, 08 -22h kể cả T7, CN)</li>
-                        <li><a href="#" class="text-white text-decoration-none">Gửi yêu cầu hỗ trợ</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Tra cứu đơn hàng</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Phương thức vận chuyển</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Chính sách đổi trả</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="fw-bold mb-3">VỀ HISAKA VN</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">Giới thiệu Hisaka.vn</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Tuyển Dụng</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Chính sách bảo mật</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Điều khoản sử dụng</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Liên hệ</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="fw-bold mb-3">HỢP TÁC & LIÊN KẾT</h5>
-                    <p>Hisaka Clinic</p>
-                    <p>Hisaka Cẩm Nang</p>
-                    <h5 class="fw-bold mt-4 mb-3">THANH TOÁN</h5>
-                    <div class="d-flex gap-2">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1280px-Visa_Inc._logo.svg.png" alt="Visa" style="height: 25px; background-color: white; padding: 2px; border-radius: 3px;">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1280px-MasterCard_Logo.svg.png" alt="MasterCard" style="height: 25px; background-color: white; padding: 2px; border-radius: 3px;">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/JCB_logo.svg/1280px-JCB_logo.svg.png" alt="JCB" style="height: 25px; background-color: white; padding: 2px; border-radius: 3px;">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="fw-bold mb-3">CẬP NHẬT THÔNG TIN KHUYẾN MÃI</h5>
-                    <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="email của bạn">
-                        <button class="btn btn-warning" type="button">Đăng ký</button>
-                    </div>
+    <footer class="hisaka-footer text-white py-4 mt-auto" style="background-color: #d97575;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5 class="fw-bold mb-3">HỖ TRỢ KHÁCH HÀNG</h5>
+                <ul class="list-unstyled">
+                    <li>Hotline: 1900 6035 (miễn phí, 08-22h kể cả T7, CN)</li>
+                    <li><a href="#" class="text-white text-decoration-none">Gửi yêu cầu hỗ trợ</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Tra cứu đơn hàng</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Phương thức vận chuyển</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Chính sách đổi trả</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 class="fw-bold mb-3">VỀ HISAKA</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">Giới thiệu Hisaka.vn</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Tuyển Dụng</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Chính sách bảo mật</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Điều khoản sử dụng</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 class="fw-bold mb-3">HỢP TÁC & LIÊN KẾT</h5>
+                <p class="mb-1"><a href="https://hisaka.vn/clinic" class="text-white text-decoration-none">Hisaka Clinic</a></p>
+                <p>Hisaka Cẩm Nang</p>
+                <h5 class="fw-bold mt-4 mb-3">THANH TOÁN</h5>
+                <div class="d-flex gap-2">
+                    <img src="~/images/visa.png" alt="Visa" style="height: 25px; background-color: white; padding: 2px; border-radius: 3px;">
+                    <img src="~/images/mastercard.png" alt="MasterCard" style="height: 25px; background-color: white; padding: 2px; border-radius: 3px;">
+                    <img src="~/images/jcb.png" alt="JCB" style="height: 25px; background-color: white; padding: 2px; border-radius: 3px;">
                 </div>
             </div>
-            <div class="text-center mt-4 border-top pt-3">
-                &copy; @DateTime.Now.Year - HISAKA - All Rights Reserved
+            <div class="col-md-3">
+                <h5 class="fw-bold mb-3">CẬP NHẬT THÔNG TIN KHUYẾN MÃI</h5>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control rounded-pill-start" placeholder="email của bạn">
+                    <button class="btn btn-warning rounded-pill-end" type="button">Đăng ký</button>
+                </div>
             </div>
         </div>
-    </footer>
+        <div class="text-center mt-4 border-top pt-3" style="border-color: rgba(255,255,255,0.2) !important;">
+            &copy; @DateTime.Now.Year - HISAKA - All Rights Reserved
+        </div>
+    </div>
+</footer>
+
 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js" asp-append-version="true"></script>
     <script src="~/lib/jquery/dist/jquery.min.js" asp-append-version="true"></script>
